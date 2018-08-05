@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Cache strategy</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">Panacloud Bootcamp</a>
+        <p>Assignment # 01</p>
+    </header>
+    <div class="container my-3">
+        <div class="well my-3">
+            <h1>Caching strategy </h1>
+            <p><strong>Objective:</strong> Render DOM from cache for instant loading and update the cache from network</p>
+        </div>
+        <button onClick="getData()" class="btn btn-primary">Get Todos</button>
+        <ul id="container" class="list-group my-3"></ul>
+    </div>
+
+    <div id="custom-modal">
+        <div id="custom-modal-header">Message:</div>
+        <div id="custom-modal-body">
+            <p>Updated data found! Do you want to update the site?</p>
+            <div id="custom-btns">
+                <button class="btn btn-primary" onClick="hideModal(true)">Yes</button>
+                <button class="btn btn-danger" onClick="hideModal(false)">No</button>                
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
